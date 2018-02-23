@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Youtube Random Comment Picker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="ssk/css/social-share-kit.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!--    OVERLAY     -->
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="javascript:" onclick="window.open('https://plus.google.com/share?url=http://ycp.somee.com','GooglePlus','height=600,width=800,top=50,left=200')">
+                <img src="img/google.png" height="64px" width="64px">
+            </a>
+            <a href="javascript:" onclick="window.open('https://www.reddit.com/submit?url=http://ycp.somee.com&amp;title=YouTube%20Random%20Comment%20Picker','Reddit','height=600,width=800,top=50,left=200')">
+                <img src="img/Reddit.png" height="64px" width="64px">
+            </a>
+            <a href="javascript:" onclick="window.open('http://pinterest.com/pin/create/button/?url=http://cc.somee.com&media=https://www.brachaprinting.com/wp-content/uploads/2013/10/Apple-logo1.jpg&description=Welcome%20to%20A%20Place%20Where%20we%20can%20Convert%20Currencies','Pinterest','height=600,width=800,top=50,left=200')" class="pin-it-button" count-layout="horizontal">
+                <img border="0" src="img/Pinterest.png" height="64px" width="64px" title="Pin It" />
+            </a>
+            <a href="javascript:" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com','LinkedIn','height=600,width=800,top=50,left=200')">
+                <img src="img/linkedin.png" height="64px" width="64px">
+            </a>
+            <a href="javascript:" onclick="window.open('https://www.stumbleupon.com/submit?url=http://ycp.somee.com&amp;title=YouTube%20Random%20Comment%20Picker%20For%20GiveAways','StumbleUpon','height=600,width=800,top=50,left=200')">
+                <img src="img/stumbleupon.png">
+            </a>
+            <a href="javascript:" onclick="window.open('https://www.tumblr.com/share/link?url=http://ycp.somee.com&amp;title=YouTube%20Random%20Comment%20Picker%20For%20GiveAways','Tumblr','height=600,width=800,top=50,left=200')">
+                <img src="img/tumblr.png" height="64px" width="64px">
+            </a>
+            <a href="javascript:" onclick="window.open('https://vkontakte.ru/share.php?url=http://ycp.somee.com','Vk','height=600,width=800,top=50,left=200')">
+                <img src="img/vk.png" height="64px" width="64px">
+            </a>
+            <a href="javascript:" onclick="window.open('https://www.yummly.com/urb/verify?url=http://ycp.somee.com&amp;title=YouTube%20Random%20Comment%20Picker%20For%20GiveAways','StumbleUpon','height=600,width=800,top=50,left=200')">
+                <img src="img/yummly.png" height="64px" width="64px">
+            </a>
+        </div>
+    </div>
+    <!--SOCIAL LINKS APP SHARE-->
+    <div class="ssk-group ssk-sticky ssk-left ssk-center">
+        <a href="https://www.facebook.com/sharer.php?u=http://ycp.somee.com" target="_blank" class="ssk"><i class="fa fa-facebook-square" style="font-size:26px;"></i></a>
+        <a href="https://twitter.com/share?url=http://ycp.somee.com&amp;text=Hi%20Check%20Out%20This%20YouTube%20Random%20Comment%20Picker%20For%20GiveAways!&amp;hashtags=ycp" target="_blank" class="ssk"><i class="fa fa-twitter" style="font-size:24px;"></i></a>
+        <!-- <a href="https://plus.google.com/share?url=http://ycp.somee.com" target="_blank" class="ssk ssk-google-plus"></a> -->
+        <!-- <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" class="ssk ssk-linkedin"></a> -->
+        <a href="https://telegram.me/share/url?url=https://web.telegram.org&text=Hi! Check Out This YouTube Comment Picker For GiveAways http://ycp.somee.com" target="_blank" class="ssk"><span class="fa fa-telegram"></span></a>
+        <a href="mailto:?subject=YouTube Random Comment Picker&body=Hi! Check Out This YouTube Comment Picker For GiveAways! http://ycp.somee.com" class="ssk ssk-email"></a>
+        <a id="Sms" href="sms:?body=Hi!%20Check%20Out%20This%YouTube%20Random%20Comment%20Picker%20Site%20For%20GiveAways:%0A%0Ahttp://ycp.somee.com" class="ssk"><i class="fa fa-commenting"></i></a>
+        <a id="WhatsApp" href="whatsapp://send?text=Hi! Check Out This YouTube Random Comment Picker Site For GiveAways!%0D%0A%0D%0A http://cc.somee.com" data-action="share/whatsapp/share" class="ssk" onclick="if (!navigator.userAgent.match(/iPhone|Android/i)) {
+            alert('Feature Available on Android/iOS');}"><i class="fa fa-whatsapp" style="font-size:26px"></i></a>
+        <!-- <a href="javascript:" onclick="window.open('https://www.reddit.com/submit?url=http://ycp.somee.com&amp;title=YouTube%20Random%20Comment%20Picker','Reddit','height=600,width=800,top=50,left=200')" class="ssk"><i class="fa fa-reddit"></i></a> -->
+        <a id="print" href="javascript:" onclick="window.print()" class="ssk"><i class="fa fa-print" style="font-size:24px;"></i></a>
+        <a href="javascript:" onclick="openNav()" class="ssk"><i class="fa fa-plus-square" style="font-size:26px"></i></a>
+    </div>
+    <!--SOCIAL LINKS DEVELOPER-->
+    <section class="navbar bg-dark" id="social">
+        <div class="container">
+            <div class="row" style="width:100%;">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/amandeepkochhar18" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/amandeepkochhar" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.quora.com/profile/Amandeep-Kochhar" target="_blank"><i class="fa fa-quora"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-8 ml-auto">
+                    <div class="social-contact text-right">
+                        <a href="mailto:amandeeptherockstar@gmail.com?subject=Feedback&body=FirstName : %0D%0A LastName : %0D%0A"><i class="fa fa-envelope pr-2"></i>amandeeptherockstar@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-info" id="NavBar">
+        <div class="container">
+            <a class="navbar-brand m-auto" href="optimized.html">YouTube Random Comment Picker</a>
+        </div>
+    </nav>
+
+    <!--Showcase-->
+    <div class="container my-4" id="showcase">
+        <h2 class="text-center">Enter YouTube URL</h2>
+    </div>
+
+    <!--Form-->
+    <div class="container" id="url-container">
+        <div class="input-group" id="input-container">
+            <input type="text" id="videoId" class="form-control" placeholder="Eg : https://www.youtube.com/watch?v=X5h8_D7LPdg" />
+            <span class="input-group-append">
+                <button id="btn-search" type="button" class="btn btn-outline-info"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+        <div class="mt-3">
+            <h5><span id="uc">0  Unique Comments Found!</span></h5>
+        </div>
+    </div>
+
+    <!--SEARCH CRITERIA-->
+    <div class="container mb-3" id="criteria">
+        <div class="form-check form-check-inline">Criteria:
+            <input class="form-check-input ml-3" type="radio" name="cr" value="random" checked>
+            <label class="form-check-label">
+                Random
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="cr" value="liked">
+            <label class="form-check-label">
+                Max Liked
+            </label>
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="container" id="button">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <input type="button" value="Generate Comment" id="btn-random" class="form-control btn btn-info btn-block" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--JS Produced OP-->
+    <div class="container my-4">
+        <div id="list"></div>
+    </div>
+
+    <!--    FOR BOTTOM SPACE    -->
+    <div style="min-height:50px;"></div>
+    <!--WAIT WHILE LOADING-->
+    <div id="wait">
+        <img src="demo_wait.gif" width="64" height="64"><br>Loading..
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+        $(document).ready(function () {
+            if (!navigator.userAgent.match(/iPhone|Android/i)) {
+                $('#Sms').hide();
+                $('#WhatsApp').hide();
+            }
+            else {
+                $('#print').hide();
+            }
+        });
+    </script>
+    <script src="optimized.js"></script>
+</body>
+</html>
