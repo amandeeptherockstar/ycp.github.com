@@ -251,7 +251,7 @@ function fetchVideoData(PageToken) {
                 removeA(arrayFilterID, channelIdWhoUploadedVideo);
 
                 //$("#uc").html(arrayFilterID.length);
-                $("#uc").html(arrayFilterID.length + " Unique Comments Found!");
+                $("#uc").html(arrayFilterID.length + " Unique Out Of " + arrayID.length +" Comments!");
                 console.log(arrayFilterID.length, "IdLength F");
                 console.log(arrayFilterID, "IdArray F");
 

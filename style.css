@@ -4,16 +4,19 @@ body{
 p {
     margin: 0;
 }
+#gifColor{
+	color: #DC3545;
+	font-weight:400;
+}
 #wait{
     display: none;
-    width:69px;
-    height:89px;
-    border: 1px solid black;
+    width:110px;
+    height:130px;
     position: absolute;
     top:50%;
     left:50%;
-    margin-top: -34.5px;
-    margin-left: -44.5px;
+    margin-top: -50px;
+    margin-left: -50px;
     padding:3px;
 }
 /*#btn-random,
@@ -25,7 +28,6 @@ p {
     visibility: hidden;
 }
 #social{
-    border-bottom: 3px solid red;
     height: 40px;
     font-size: 16px;
 }
@@ -34,14 +36,14 @@ p {
     color: white;
 }
 #social .social-icon a:hover {
-    color: red;
+    color: #DC3545;
 }
 #social .social-contact a {
     color:white;
     text-decoration: none;
 }
 #social .social-contact a:hover{
-    color:red;
+    color: #DC3545;
 }
 
 /* social share floating buttons OVERLAY*/
@@ -99,7 +101,31 @@ p {
     }
 }
 
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0; 
+}
 
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -60px;
+}
+#push,
+#footer {
+    height: 60px;
+}
+
+#footer {
+    background-color: #f5f5f5;
+}
+#Documentation{
+    height:16px;
+}
+#Documentation a {
+    font-size: 12px;
+}
 /*      MEDIA   QUERIES     */
 /*=====================================================
                 LARGE DEVICES >=1200PX
@@ -107,98 +133,131 @@ p {
 @media(min-width:1200px) {
     /*      WORKS PERFECTLY FINE NO NEED TO MODIFY      */
 }
-        
-/*=====================================================
+    /*=====================================================
                 MEDIUM DEVICES >=992PX
 =======================================================*/
-@media(min-width:992px) and (max-width: 1199px){
-    /*      WORKS PERFECTLY FINE NO NEED TO MODIFY      */
-}
-    
-/*=====================================================
+    @media(min-width:992px) and (max-width: 1199px) {
+        /*      WORKS PERFECTLY FINE NO NEED TO MODIFY      */
+    }
+    /*=====================================================
                 SMALL DEVICES >=768PX
 =======================================================*/
-@media(min-width:768px) and (max-width: 991px){
-    /*      WORKS PERFECTLY FINE NO NEED TO MODIFY      */
-}
-@media(min-width:576px) and (max-width: 767px){
-    /*      WORKS PERFECTLY FINE NO NEED TO MODIFY      */
-}
-
-@media (max-width: 575px){
-    #social {
-        height: 55px;
-        font-size: 14px;
-    }
-    #showcase h2{
-        font-size: 1.5rem;
-    }
-}
-@media (max-width: 358px){
-    #social{
-        height: 55px;
-        font-size: 14px;
-    }
-    #showcase h2{
-        font-size: 1.5rem;
-    }
-    #NavBar a{
-        font-size: 18px;
-    }
-}
-@media (max-width: 342px){
-    #social{
-        height: 55px;
-        font-size: 14px;
-    }
-    #showcase h2{
-        font-size: 1.5rem;
-    }
-    .social-contact a i{
-        display: inline;
-    }
-    #NavBar a{
-        font-size: 16px;
-    }
-    #url-container h5{
-        font-size: 16px;
-    }
-    div#criteria{
-        display:inline;
-    }
-    #button {
-        margin-top: 10px !important;
+    @media(min-width:768px) and (max-width: 991px) {
+        /*      WORKS PERFECTLY FINE NO NEED TO MODIFY      */
     }
 
-}
-@media screen and (max-width: 290px){
-    #social{
-        height: 55px;
-        font-size: 14px;
-        padding: 0;
+    @media(min-width:576px) and (max-width: 767px) {
+        /*  ADD Margins To Sticky Footer Because of Social Share Kit*/
+        .fixed-bottom {
+             margin-bottom: 40px !important; 
+        }
     }
-    #showcase h2{
-        font-size: 1.5rem;
+
+    @media (max-width: 575px) {
+        #social {
+            height: 55px;
+            font-size: 14px;
+        }
+
+        #showcase h2 {
+            font-size: 1.5rem;
+        }
+        .fixed-bottom {
+            margin-bottom: 40px !important;
+        }
     }
-    .social-contact a i{
-        display: inline;
+
+    @media (max-width: 358px) {
+        #social {
+            height: 55px;
+            font-size: 14px;
+        }
+
+        #showcase h2 {
+            font-size: 1.5rem;
+        }
+
+        #NavBar a {
+            font-size: 18px;
+        }
+        .fixed-bottom {
+            margin-bottom: 40px !important;
+        }
     }
-    #NavBar a{
-        font-size: 15px;
+
+    @media (max-width: 342px) {
+        #social {
+            height: 55px;
+            font-size: 14px;
+        }
+
+        #showcase h2 {
+            font-size: 1.5rem;
+        }
+
+        .social-contact a i {
+            display: inline;
+        }
+
+        #NavBar a {
+            font-size: 16px;
+        }
+
+        #url-container h5 {
+            font-size: 16px;
+        }
+
+        div#criteria {
+            display: inline;
+        }
+
+        #button {
+            margin-top: 10px !important;
+        }
+        .fixed-bottom {
+            margin-bottom: 40px !important;
+        }
     }
-    #url-container h5{
-        font-size: 16px;
+
+    @media screen and (max-width: 290px) {
+        #social {
+            height: 55px;
+            font-size: 14px;
+            padding: 0;
+        }
+
+        #showcase h2 {
+            font-size: 1.5rem;
+        }
+
+        .social-contact a i {
+            display: inline;
+        }
+
+        #NavBar a {
+            font-size: 15px;
+        }
+
+        #url-container h5 {
+            font-size: 16px;
+        }
+
+        #criteria .form-check-label {
+            font-size: 12px;
+        }
+
+        #button {
+            margin-top: 10px !important;
+        }
+
+        #social .social-contact {
+            font-size: 14px;
+        }
+
+        #NavBar a {
+            font-size: 14px;
+        }
+        .fixed-bottom {
+            margin-bottom: 40px !important;
+        }
     }
-    #criteria .form-check-label {
-        font-size: 12px;
-    }
-    #button {
-        margin-top: 10px !important;
-    }
-    #social .social-contact{
-        font-size:14px;
-    }
-    #NavBar a{
-        font-size: 14px;
-    }
-}

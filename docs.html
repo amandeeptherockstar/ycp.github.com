@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="ssk/css/social-share-kit.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style type="text/css">
+        #social {
+            border-bottom: 3px solid red;
+            height: 40px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!--    OVERLAY     -->
+    <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="javascript:" onclick="window.open('https://plus.google.com/share?url=http://commentpicker.tk','GooglePlus','height=600,width=800,top=50,left=200')">
+                <img src="img/google.png" height="64px" width="64px">
+            </a>
+            <a href="javascript:" onclick="window.open('https://www.reddit.com/submit?url=http://commentpicker.tk&amp;title=YouTube%20Random%20Comment%20Picker','Reddit','height=600,width=800,top=50,left=200')">
+                <img src="img/Reddit.png" height="64px" width="64px">
+            </a>
+            <a href="javascript:" onclick="window.open('http://pinterest.com/pin/create/button/?url=http://commentpicker.tk&media=https://www.brachaprinting.com/wp-content/uploads/2013/10/Apple-logo1.jpg&description=Welcome%20to%20A%20Place%20Where%20we%20can%20Convert%20Currencies','Pinterest','height=600,width=800,top=50,left=200')" class="pin-it-button" count-layout="horizontal">
+                <img border="0" src="img/Pinterest.png" height="64px" width="64px" title="Pin It" />
+            </a>
+            <a href="javascript:" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=http://commentpicker.tk','LinkedIn','height=600,width=800,top=50,left=200')">
+                <img src="img/linkedin.png" height="64px" width="64px">
+            </a>
+            <a href="javascript:" onclick="window.open('https://www.stumbleupon.com/submit?url=http://commentpicker.tk&amp;title=YouTube%20Random%20Comment%20Picker%20For%20GiveAways','StumbleUpon','height=600,width=800,top=50,left=200')">
+                <img src="img/stumbleupon.png">
+            </a>
+            <a href="javascript:" onclick="window.open('https://www.tumblr.com/share/link?url=http://commentpicker.tk&amp;title=YouTube%20Random%20Comment%20Picker%20For%20GiveAways','Tumblr','height=600,width=800,top=50,left=200')">
+                <img src="img/tumblr.png" height="64px" width="64px">
+            </a>
+            <a href="javascript:" onclick="window.open('https://vkontakte.ru/share.php?url=http://commentpicker.tk','Vk','height=600,width=800,top=50,left=200')">
+                <img src="img/vk.png" height="64px" width="64px">
+            </a>
+            <a href="javascript:" onclick="window.open('https://www.yummly.com/urb/verify?url=http://commentpicker.tk&amp;title=YouTube%20Random%20Comment%20Picker%20For%20GiveAways','StumbleUpon','height=600,width=800,top=50,left=200')">
+                <img src="img/yummly.png" height="64px" width="64px">
+            </a>
+        </div>
+    </div>
+
+    <!--SOCIAL LINKS APP SHARE-->
+    <div class="ssk-group ssk-sticky ssk-left ssk-center">
+        <a href="javascript:" onclick="window.open('https://www.facebook.com/sharer.php?u=http://ycp.somee.com','Facebook','height=600,width=800,top=50,left=200')" target="_blank" class="ssk"><i class="fa fa-facebook-square" style="font-size:26px;"></i></a>
+        <a href="javascript:" onclick="window.open('https://twitter.com/share?url=http://ycp.somee.com&amp;text=Hi%20Check%20Out%20This%20YouTube%20Random%20Comment%20Picker%20For%20GiveAways!&amp;hashtags=ycp','Twitter','height=600,width=800,top=50,left=200')" target="_blank" class="ssk"><i class="fa fa-twitter" style="font-size:24px;"></i></a>
+        <a href="javascript:" onclick="window.open('https://telegram.me/share/url?url=https://web.telegram.org&text=Hi!%20Check%20Out%20This%20YouTube%20Comment%20Picker%20For%20GiveAways%20http://ycp.somee.com')" target="_blank" class="ssk"><span class="fa fa-telegram"></span></a>
+        <a href="mailto%3A%3Fsubject%3DYouTube%20Random%20Comment%20Picker%26body%3DHi!%20Check%20Out%20This%20YouTube%20Comment%20Picker%20For%20GiveAways!%20http%3A%2F%2Fycp.somee.com" class="ssk ssk-email"></a>
+        <a id="Sms" href="sms:?body=Hi!%20Check%20Out%20This%YouTube%20Random%20Comment%20Picker%20Site%20For%20GiveAways:%0A%0Ahttp://ycp.somee.com" class="ssk"><i class="fa fa-commenting"></i></a>
+        <a id="WhatsApp" href="whatsapp://send?text=Hi! Check Out This YouTube Random Comment Picker Site For GiveAways!%0D%0A%0D%0A http://cc.somee.com" data-action="share/whatsapp/share" class="ssk" onclick="if (!navigator.userAgent.match(/iPhone|Android/i)) {
+            alert('Feature Available on Android/iOS');}"><i class="fa fa-whatsapp" style="font-size:26px"></i></a>
+        <a id="print" href="javascript:" onclick="window.print()" class="ssk"><i class="fa fa-print" style="font-size:24px;"></i></a>
+        <a href="javascript:" onclick="openNav()" class="ssk"><i class="fa fa-plus-square" style="font-size:26px"></i></a>
+    </div>
+
+    <!--SOCIAL LINKS DEVELOPER-->
+    <section class="navbar bg-dark" id="social">
+        <div class="container">
+            <div class="row" style="width:100%;">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/amandeepkochhar18" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/amandeepkochhar" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.quora.com/profile/Amandeep-Kochhar" target="_blank"><i class="fa fa-quora"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-8 ml-auto">
+                    <div class="social-contact text-right">
+                        <a href="mailto:amandeeptherockstar@gmail.com?subject=Feedback&body=FirstName : %0D%0A LastName : %0D%0A"><i class="fa fa-envelope pr-2"></i>amandeeptherockstar@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-info" id="NavBar">
+        <div class="container">
+            <a class="navbar-brand m-auto" href="docs.html">Documentation</a>
+        </div>
+    </nav>
+
+    <!--Desc-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 mt-5">
+                <h1 class="h4"><u>Technology Used</u></h1>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Bootstrap 4.0 FrameWork For Responsive UI</li>
+                    <li>JavaScript (70%)</li>
+                    <li>ECMAScript (20%)</li>
+                    <li>jQuery (10%)</li>
+                    <li>JSON (YouTube Data API v3)</li>
+                    <li>Font-Awesome Icon Library v4.7</li>
+                    <li>Social Share Kit For Responsive Sharing Links</li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h1 class="h4"><u>Validations</u></h1>
+                <ul>
+                    <li>Empty URL</li>
+                    <li>Wrong Url (Other than YouTube)</li>
+                    <li>‎Invaild Url (Url that is Genuine but includes No Video)</li>
+                    <li>
+                        <strong>Server Errors:</strong>
+                        <ul>
+                            <li>Resource Not Found (404)</li>
+                            <li>Internal Server Error (500)</li>
+                            <li>Server TimeOut</li>
+                            <li>Parsing Errors and Some Uncaught Errors</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h1 class="h4"><u>Exception Cases</u></h1>
+                <ul>
+                    <li>Doesn't Include Video Owner Comment and Like In Random Comment Generation <strong>(Abviously Who is going to Conduct GiveAway Should Not Be A Winner)</strong></li>
+                    <li>Filter Out Every Comment and Like. Considers 1 Comment/Like Per User</li>
+                    <li>‎In Case there is No Comment having any Like on the video It Display Appropriate Message.</li>
+                    <li>While Picking Max Liked Comment Case <strong>If there are more than two users have Same Number of Likes, project will Randomly Declare A Winner among them! So Every User Have Equal Chance Of Winning.</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="height:50px"></div>
+    <script type="text/javascript">
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+        $(document).ready(function () {
+            if (!navigator.userAgent.match(/iPhone|Android/i)) {
+                $('#Sms').hide();
+                $('#WhatsApp').hide();
+            }
+            else {
+                $('#print').hide();
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
